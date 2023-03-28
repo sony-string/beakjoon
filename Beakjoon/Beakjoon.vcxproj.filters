@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="2751-mergeSort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1715-cardSorting.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1018-rebrushChessboard.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1085_shortestDistance.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1181-sortWords.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4153B3-right-angled-triangle.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10250B3-ACMHotel.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1157-wordStudying.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1546-average.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2577-numberofnumbers.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2675-repeatString.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2920-toneScale.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2908-constant.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8958-OXquiz.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3052-remains.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1152-numOfwords.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1874-stack.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="18111-minecraft.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2805-chopTree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1654S2-chopLan.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1929-getPrimeNum.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1966-printerQueue.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2108-statistics.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10845-queue.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2606-virus.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1058-friend.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1260-dfs_bfs.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2178-mazeSearch.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="7662-dualPriorityQueue.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1931-allocateMeetingRoom.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11723-set.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1620-pokemon.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1764-noSeeNoHeard.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

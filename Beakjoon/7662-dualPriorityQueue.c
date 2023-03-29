@@ -29,8 +29,8 @@ int _pop(Heap* heap) {
 	int item = heap->heap[0];
 	int left, right, index, bigger;
 	index = 0;
-	heap->heap[0] = heap->heap[heap->numNodes - 1];
 	heap->numNodes--;
+	heap->heap[0] = heap->heap[heap->numNodes];
 	while (index < heap->numNodes) {
 		left = index * 2 + 1;
 		right = index * 2 + 2;
@@ -39,7 +39,7 @@ int _pop(Heap* heap) {
 		} 
 		if (left == heap->numNodes - 1) {
 			if (heap->heap[left] > heap->heap[index]) {
-				swap(&heap->heap[left], &(heap->heap[index]));
+				swap(&(heap->heap[left]), &(heap->heap[index]));
 			}
 			return item;
 		}
@@ -49,8 +49,12 @@ int _pop(Heap* heap) {
 		else {
 			bigger = right;
 		}
-		swap(&(heap->heap[bigger]), &(heap->heap[index]));
-		index = bigger;
+		if (heap->heap[bigger] > heap->heap[index]) {
+			swap(&(heap->heap[bigger]), &(heap->heap[index]));
+			index = bigger;
+			continue;
+		}
+		break;
 	}
 	return item;
 }
@@ -63,8 +67,8 @@ int _popMin(Heap* heap) {
 	int item = heap->heap[0];
 	int left, right, index, smaller;
 	index = 0;
-	heap->heap[0] = heap->heap[heap->numNodes - 1];
 	heap->numNodes--;
+	heap->heap[0] = heap->heap[heap->numNodes];
 	while (index < heap->numNodes) {
 		left = index * 2 + 1;
 		right = index * 2 + 2;
@@ -73,7 +77,7 @@ int _popMin(Heap* heap) {
 		}
 		if (left == heap->numNodes - 1) {
 			if (heap->heap[left] < heap->heap[index]) {
-				swap(&heap->heap[left], &(heap->heap[index]));
+				swap(&(heap->heap[left]), &(heap->heap[index]));
 			}
 			return item;
 		}
@@ -83,8 +87,12 @@ int _popMin(Heap* heap) {
 		else {
 			smaller = right;
 		}
-		swap(&(heap->heap[smaller]), &(heap->heap[index]));
-		index = smaller;
+		if (heap->heap[smaller] < heap->heap[index]) {
+			swap(&(heap->heap[smaller]), &(heap->heap[index]));
+			index = smaller;
+			continue;
+		}
+		break;
 	}
 	return item;
 }

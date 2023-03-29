@@ -114,5 +114,14 @@
     <ClCompile Include="1764-noSeeNoHeard.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11399-atm.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1927-minHeap.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="7576-tomate.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

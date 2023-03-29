@@ -123,5 +123,8 @@
     <ClCompile Include="7576-tomate.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1697S1-hideAndSeek.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

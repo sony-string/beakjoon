@@ -126,5 +126,32 @@
     <ClCompile Include="1697S1-hideAndSeek.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1074-Z.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="18870-zipCoord.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11724-connectedComponents.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11279-maxHeap.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2630-colorPaper.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1012-organicCabbage.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11726-2xnTiling.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9095-add123.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1463-makeIntoOne.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

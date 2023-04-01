@@ -153,5 +153,11 @@
     <ClCompile Include="1463-makeIntoOne.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11444-fibonacci6.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9663-N-Queen.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

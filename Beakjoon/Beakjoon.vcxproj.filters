@@ -159,5 +159,20 @@
     <ClCompile Include="9663-N-Queen.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2407-combination.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11053-longestSubArray.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15650-NandM(2).c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15654-NandM(5).c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2263-traversalOnBTree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

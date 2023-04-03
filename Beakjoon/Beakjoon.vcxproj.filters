@@ -174,5 +174,8 @@
     <ClCompile Include="2263-traversalOnBTree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1918-postfixNotation.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

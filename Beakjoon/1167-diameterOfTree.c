@@ -7,12 +7,12 @@ typedef struct Node {
 	int distance;
 }Node;
 
-int getDistancesDfs(int *distArr, const Node* adjList, int node, int beforeNode) {
+int getDistancesDfs(int* distArr, const Node* adjList, int node, int beforeNode) {
 	int longest = 0, secondLongest = 0, temp = 0;
 	Node* nodep = adjList[node].nextNode;
 	while (nodep != NULL) {
 		if (nodep->item != beforeNode) {
-				temp = nodep->distance + getDistancesDfs(distArr, adjList, nodep->item, node);
+			temp = nodep->distance + getDistancesDfs(distArr, adjList, nodep->item, node);
 
 			if (secondLongest < temp) {
 				secondLongest = temp;
@@ -72,8 +72,9 @@ int main() {
 	for (i = 1; i <= numNodes; i++) {
 		r = 0;
 		nodep = &adjList[i];
-		while (nodep->nextNode == NULL) {
+		while (nodep->nextNode != NULL) {
 			stackNodes[r] = nodep->nextNode;
+			nodep = nodep->nextNode;
 			r++;
 		}
 		for (k = r - 1; k >= 0; k--) {

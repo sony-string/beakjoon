@@ -186,5 +186,8 @@
     <ClCompile Include="1167-diameterOfTree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2206-breakingWalls.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

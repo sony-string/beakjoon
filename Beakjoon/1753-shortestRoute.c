@@ -123,7 +123,6 @@ int main() {
 		nodep = (Node*)calloc(1, sizeof(Node));
 		nodep->node = dst;
 		nodep->dist = dist;
-		iteratorNode = &adjList[src];
 		adjList[src].lastNode->nextNode = nodep;
 		adjList[src].lastNode = nodep;
 	}

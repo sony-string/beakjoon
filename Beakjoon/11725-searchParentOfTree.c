@@ -61,9 +61,10 @@ int main() {
 	for (i = 1; i <= numNodes; i++) {
 		r = 0;
 		nodep = &adjList[i];
-		while (nodep->nextNode == NULL) {
+		while (nodep->nextNode != NULL) {
 			stackNodes[r] = nodep->nextNode;
 			r++;
+			nodep = nodep->nextNode;
 		}
 		for (k = r - 1; k >= 0; k--) {
 			free(stackNodes[k]);

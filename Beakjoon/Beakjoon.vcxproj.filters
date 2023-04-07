@@ -192,5 +192,8 @@
     <ClCompile Include="1865-floyd.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1753-shortestRoute.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

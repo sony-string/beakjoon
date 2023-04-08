@@ -199,7 +199,10 @@
     <ClCompile Include="1260-dfs_bfs.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="13549-hideAndSeek3.c" />
+    <ClCompile Include="12865-normalBackpack.c" />
+    <ClCompile Include="13549-hideAndSeek3.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="1377-bubblesort.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

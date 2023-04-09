@@ -204,5 +204,11 @@
     <ClCompile Include="12865-normalBackpack.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9251-LCS.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1149-RGBstreet.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

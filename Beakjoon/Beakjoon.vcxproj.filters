@@ -210,5 +210,11 @@
     <ClCompile Include="1149-RGBstreet.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10971-TSP2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1629-product.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

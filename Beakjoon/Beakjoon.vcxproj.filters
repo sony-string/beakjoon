@@ -222,5 +222,8 @@
     <ClCompile Include="1991-travellingInTree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9465-sticker.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

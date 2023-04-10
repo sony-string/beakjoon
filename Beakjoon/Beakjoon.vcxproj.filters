@@ -216,5 +216,8 @@
     <ClCompile Include="1629-product.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1932-integerTriangle.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

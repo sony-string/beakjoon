@@ -225,5 +225,8 @@
     <ClCompile Include="9465-sticker.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11660-prefixSum5.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

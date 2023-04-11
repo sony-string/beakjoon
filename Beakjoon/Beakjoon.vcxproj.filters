@@ -228,5 +228,8 @@
     <ClCompile Include="11660-prefixSum5.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="12852-makeIntoOne2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -208,6 +208,7 @@
     <ClCompile Include="1260-dfs_bfs.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="12852-makeIntoOne2.c" />
     <ClCompile Include="12865-normalBackpack.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

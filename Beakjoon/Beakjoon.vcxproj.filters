@@ -234,5 +234,8 @@
     <ClCompile Include="2467-liquid.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1806-subSum.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

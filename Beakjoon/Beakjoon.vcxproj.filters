@@ -237,5 +237,8 @@
     <ClCompile Include="1806-subSum.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2239-sudoku.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

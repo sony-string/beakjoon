@@ -189,9 +189,6 @@
     <ClCompile Include="2206-breakingWalls.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1865-floyd.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="1753-shortestRoute.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -241,6 +238,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="9252-LCS2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11404-floyd.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

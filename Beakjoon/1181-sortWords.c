@@ -8,7 +8,7 @@ int main() {
 	int numberOfLines;
 	scanf("%d", &numberOfLines);
 	char** arr = (char**)malloc(numberOfLines * sizeof(char*));
-	int i, j;
+	int i;
 
 	for (i = 0; i < numberOfLines; i++) {
 		arr[i] = (char*)malloc(51 * sizeof(char));
@@ -36,7 +36,6 @@ void merge(char** arr, int s, int m, int l) {
 	if (size != 1) {
 		int i = s, j = m + 1, k = 0;
 		char** sorted = (char**)malloc(size * sizeof(char*));
-		int index;
 		while (i <= m && j <= l) {
 			if (strlen(arr[i])<strlen(arr[j])) {
 				sorted[k] = arr[i];

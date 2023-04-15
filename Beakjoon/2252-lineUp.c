@@ -48,6 +48,7 @@ int main() {
 		if (isLinked[leftStudent] == 0) {
 			adjList[leftStudent].isRoot = 1;
 			isLinked[leftStudent] = 1;
+			adjList[rightStudent].isRoot = 0;
 		}
 	}
 

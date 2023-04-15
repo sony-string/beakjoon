@@ -249,5 +249,14 @@
     <ClCompile Include="1005-ACMCraft.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2252-lineUp.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1197-minSpanningTree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2473-threeLiquids.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

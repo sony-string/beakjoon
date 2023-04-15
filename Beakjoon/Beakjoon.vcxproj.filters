@@ -246,5 +246,8 @@
     <ClCompile Include="10942-palindrome.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1005-ACMCraft.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

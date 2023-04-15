@@ -55,7 +55,7 @@ int findCycle(const Node* adjList, int* isAppeared, const int* path, const int n
 int main() {
 	int numSingers, numClues, leftSinger, rightSinger, numAppeared = 0, sizeArr;
 	scanf("%d %d", &numSingers, &numClues);
-	int i, k, r, errorFlag = 0;
+	int i, k, errorFlag = 0;
 	int* arr = (int*)calloc(numSingers, sizeof(int));
 	int* isAppeared = (int*)calloc(numSingers + 1, sizeof(int));
 	int* path = (int*)calloc(numSingers + 1, sizeof(int));
@@ -74,25 +74,17 @@ int main() {
 		}
 		for (k = 0; k < sizeArr - 1; k++) {
 			leftSinger = arr[k];
-			for (r = k + 1; r < sizeArr; r++) {
-				rightSinger = arr[r];
-				nodep = adjList[leftSinger].lastNode;
-				nodep->nextNode = (Node*)calloc(1, sizeof(Node));
-				adjList[leftSinger].lastNode = nodep->nextNode;
-				nodep->nextNode->node = rightSinger;
-				isLinked[rightSinger] = 1;
-				if (isLinked[leftSinger] == 0) {
-					adjList[leftSinger].isRoot = 1;
-					adjList[rightSinger].isRoot = 0;
-					isLinked[leftSinger] = 1;
-				}
+			rightSinger = arr[k + 1];
+			nodep = adjList[leftSinger].lastNode;
+			nodep->nextNode = (Node*)calloc(1, sizeof(Node));
+			adjList[leftSinger].lastNode = nodep->nextNode;
+			nodep->nextNode->node = rightSinger;
+			isLinked[rightSinger] = 1;
+			if (isLinked[leftSinger] == 0) {
+				adjList[leftSinger].isRoot = 1;
+				adjList[rightSinger].isRoot = 0;
+				isLinked[leftSinger] = 1;
 			}
-			if (r < sizeArr) {
-				break;
-			}
-		}
-		if (k < sizeArr - 1) {
-			break;
 		}
 	}
 

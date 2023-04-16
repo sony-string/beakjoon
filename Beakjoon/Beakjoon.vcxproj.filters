@@ -264,5 +264,8 @@
     <ClCompile Include="7579-app.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9466-termProject.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

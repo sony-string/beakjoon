@@ -267,5 +267,8 @@
     <ClCompile Include="9466-termProject.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11049-orderOfMatrixProduct.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -261,5 +261,8 @@
     <ClCompile Include="2632-musicProgram.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="7579-app.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

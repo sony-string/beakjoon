@@ -273,5 +273,11 @@
     <ClCompile Include="1202-jewelThief.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="rbTreeExample.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="12015-LIS2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -279,5 +279,11 @@
     <ClCompile Include="12015-LIS2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="12100-2048easy.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14003-LIS5.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

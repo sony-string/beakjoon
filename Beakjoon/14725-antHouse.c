@@ -58,7 +58,7 @@ int main() {
 	root.nextNode = NULL;
 	root.child = NULL;
 	root.data = (char*)calloc(20, sizeof(char));
-	root.data = "\0";
+	root.data[0] = '\0';
 	Node* node, * cur;
 
 	int numLeaves, numLevel;

@@ -288,5 +288,47 @@
     <ClCompile Include="1208-sumOfSubset.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="17387-crossOfTwoLines.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2098-travellingSalesmanProblem.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9328-key.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13460-marbleEscape.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2166-areaOfPolygon.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2533-SNS.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14725-antHouse.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13334-railway.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2042-prefixSum.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1019-pagesOfbook.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11689-GCD.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2357-minAndmax.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="kakao.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2933-mineral.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

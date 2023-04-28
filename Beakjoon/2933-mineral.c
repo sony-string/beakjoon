@@ -72,30 +72,41 @@ int coloring(int** visited, char** map, int pos[], int size[]) {
 }
 
 int fallCluster(char** map, int** cluster, int size[]) {
-	int i, k, flag = 1;
-	while (flag == 1) {
-		for (i = size[0] - 2; i >= 0; i--) {
-			for (k = 0; k < size[1]; k++) {
-				if (cluster[i][k] == 1) {
-					cluster[i][k] = 0;
-					if (i != size[0] - 2) {
-						cluster[i + 1][k] = 1;
-					}
-					else {
-						flag = 0;
-					}
-					map[i][k] = '.';
-					map[i + 1][k] = 'x';
-					if (flag == 1) {
-						if (map[i + 2][k] == 'x' && cluster[i + 2][k] != 1) {
-							flag = 0;
-						}
-					}
-				}
+	int* bottom = (int*)calloc(size[1], sizeof(int));
+	int height = 999, index = 5;
+	int i, k;
+	for (k = 0; k < size[1]; k++) {
+		for (i = size[0] - 1; i >= 0; i--) {
+			if (cluster[i][k] != 0) {
+				bottom[k] = i;
+				break;
 			}
 		}
 	}
-	return 1;
+	for (k = 0; k < size[1]; k++) {
+		if (bottom[k] == 0) {
+			continue;
+		}
+		for (i = bottom[k] + 1; i < size[0]; i++) {
+			if (map[i][k] == 'x') {
+				break;
+			}
+		}
+		if (i - bottom[k] < height) {
+			height = i - bottom[k];
+		}
+	}
+	for (i = size[0] - height; i >= 0; i--) {
+		for (k = 0; k < size[1]; k++) {
+			if (cluster[i][k] == 1) {
+				cluster[i][k] = 0;
+				map[i][k] = '.';
+				map[i + height - 1][k] = 'x';
+			}
+		}
+	}
+	free(bottom);
+	return index;
 }
 
 int checkCluster(char** map, int pos[], int size[]) {

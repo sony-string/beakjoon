@@ -288,5 +288,23 @@
     <ClCompile Include="1208-sumOfSubset.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2933-mineral.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2457-princessGarden.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1103-game.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13325-binaryTree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10422-parenthesis.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1670-summitConference.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

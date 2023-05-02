@@ -306,5 +306,20 @@
     <ClCompile Include="1670-summitConference.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="16973-rectangleEscape.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11779-lowestCost.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15961-sushiBelt.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5676-alcoholCoding.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2296-sumOfThree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

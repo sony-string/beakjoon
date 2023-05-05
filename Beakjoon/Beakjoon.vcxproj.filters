@@ -321,5 +321,32 @@
     <ClCompile Include="2296-sumOfThree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="16985-Maaaaaaaaaze.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9527-countone.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1111-IQtest.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14938-sogangGround.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16964-DFSspecialjudge.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1700-multitapScheduling.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1987-alphabet.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="12869-mutalisk.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2169-controlRobot.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

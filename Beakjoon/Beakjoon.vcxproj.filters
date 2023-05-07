@@ -321,5 +321,20 @@
     <ClCompile Include="2296-sumOfThree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="polynomial.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="polynomial2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="polynomial3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9527-countone.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16985-Maaaaaaaaaze.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

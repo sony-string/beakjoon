@@ -353,7 +353,7 @@ int main() {
 			if (node->value == middle->value) {
 				free(node);
 				middle->stack += 1;
-				if (dir == 0) {
+				if (dir >= 0) {
 					middle->cur += 1;
 				}
 			}

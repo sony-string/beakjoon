@@ -46,7 +46,6 @@ TreeNode* findPreviousNode(TreeNode* node) {
 
 	return cur;
 }
-
 TreeNode* rotateLeft(TreeNode* node) {
 	TreeNode* right = node->rightNode, * parent = node->parentNode;
 
@@ -262,19 +261,14 @@ void freeMemTree(TreeNode* root) {
 
 
 int main() {
+	FILE* fp = freopen("input.txt", "r", stdin);
 	clock_t start, end;
 	start = clock();
-
-	FILE* fp = freopen("input.txt", "r", stdin);
 	TreeNode* polynomial, * node;
 	char ch;
+	char* buffer;
 	int count = 0;
 	polynomial = (TreeNode*)calloc(1, sizeof(TreeNode));
-
-	/*
-	입력 데이터 처리 (다항식 덧셈 연산 포함)
-	계수가 0인 항은 유지 (노드 삭제 비용이 큼에 비해 얻는 이득이 없음)
-	*/
 	if (scanf("%c", &ch) != EOF) {
 		scanf("%lld,%lld)", &polynomial->coef, &polynomial->expo);
 		polynomial->color = black;
@@ -293,97 +287,26 @@ int main() {
 		}
 	}
 	//free(node);
-
-
-
-	/*
-	빠른 표준 출력을 위한 버퍼링
-	버퍼의 기본 크기는 20 * (항의 개수) byte 이나, 할당 실패시 계수를 줄여가며 할당 재시도
-	*/
-	/*
-	char* buffer;
-	i = 20;
-	buffer = (char*)malloc(count *  i);
-	for (; i >= 0 && buffer == NULL; i--) {
-		buffer = (char*)malloc(count *  i);
-		if (buffer != NULL) {
-			break;
-		}
-	}
-	setvbuf(stdout, buffer, _IOFBF, count * 18);
-	*/
-
-
-	/*
-	표준 출력을 파일 출력으로 redirecting
-	*/
-	//freopen("output.txt", "w", stdout);
-
-	/*
-	연산 결과 다항식 출력
-	*/
 	node = polynomial;
 	while (node->rightNode != NULL) {
 		node = node->rightNode;
 	}
-	while (node->coef == 0) {
+	buffer = (char*)malloc(count *  18);
+	setvbuf(stdout, buffer, _IOFBF, count * 18);
+	while (1) {
+		printf("%lldx^%lld", node->coef, node->expo);
 		node = findPreviousNode(node);
-		if (node == NULL) {
+		if (node != NULL) {
+			printf(" + ");
+			continue;
+		}
+		else {
 			break;
 		}
 	}
-	if (node != NULL) {
-		if (node->coef < 0) {
-			//printf(" - ");
-			//printf("%lldx^%lld", -1 * node->coef, node->expo);
-		}
-		else {
-			//printf("%lldx^%lld", node->coef, node->expo);
-		}
-		node = findPreviousNode(node);
-		if (node != NULL) {
-			while (node->coef == 0) {
-				node = findPreviousNode(node);
-				if (node == NULL) {
-					break;
-				}
-			}
-		}
-	}
-	if (node != NULL) {
-		while (1) {
-			if (node->coef < 0) {
-				//printf(" - ");
-				//printf("%lldx^%lld", -1 * node->coef, node->expo);
-			}
-			else {
-				//printf(" + ");
-				//printf("%lldx^%lld", node->coef, node->expo);
-			}
-			node = findPreviousNode(node);
-			if (node == NULL) {
-				break;
-			}
-			while (node->coef == 0) {
-				node = findPreviousNode(node);
-				if (node == NULL) {
-					break;
-				}
-			}
-			if (node == NULL) {
-				break;
-			}
-		}
-	}
-	//fflush(stdout);
+	fflush(stdout);
 	end = clock();
 	printf("\n%.5f sec", (double)(end - start) / CLOCKS_PER_SEC);
 	fclose(fp);
-	/*
-	프로그램이 종료되며 메모리 반환이 되므로
-	직접 반환해줄 필요성 없음
-	*/
-	//freeMemTree(polynomial)
-	fflush(stdout);
 	return 0;
 }

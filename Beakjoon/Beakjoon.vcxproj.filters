@@ -594,6 +594,9 @@
     <ClCompile Include="13537-seqAndQuery1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="13544-seqAndQuery3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">

@@ -1,116 +1,65 @@
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <assert.h>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
-typedef vector<int> vi;
-
-
 typedef struct Node {
-	int l, r;
-	vi arr;
+	int start, end;
+	vector<int> arr;
 } Node;
 
-void merge(vi& dst, const vi& lhs, const vi& rhs) {
-	int l = 0, r = 0, i = 0;
-
-	while (l < lhs.size() && r < rhs.size()) {
-		if (lhs[l] <= rhs[r]) {
-			dst[i] = lhs[l];
-			i++; l++;
-		}
-		else {
-			dst[i] = rhs[r];
-			i++; r++;
-		}
+void init(vector<Node>& tree, const vector<int>& arr, int node, int start, int end) {
+	tree[node].start = start;
+	tree[node].end = end;
+	if (start == end) {
+		tree[node].arr.assign(1, arr[start]);
 	}
-
-	while (l < lhs.size()) {
-		dst[i] = lhs[l];
-		i++; l++;
-	}
-
-	while (r < rhs.size()) {
-		dst[i] = rhs[r];
-		i++; r++;
+	else {
+		init(tree, arr, node * 2, start, (start + end) / 2);
+		init(tree, arr, node * 2 + 1, (start + end) / 2 + 1, end);
+		tree[node].arr.assign(end - start + 1, 0);
+		merge(tree[node * 2].arr.begin(), tree[node * 2].arr.end(),
+			tree[node * 2 + 1].arr.begin(), tree[node * 2 + 1].arr.end(),
+			tree[node].arr.begin());
 	}
 }
 
-typedef struct SegTree {
-	int size;
-	Node* tree;
-
-	void makeSegTree(const vi& arr, int v, int l, int r) {
-		int lindex = v * 2;
-		int rindex = lindex + 1;
-		int m = l + r;
-		m /= 2;
-		tree[v].l = l;
-		tree[v].r = r;
-
-		if (l != r) {
-			makeSegTree(arr, lindex, l, m);
-			makeSegTree(arr, rindex, m + 1, r);
-			tree[v].arr.assign(r - l + 1, 0);
-			merge(tree[v].arr, tree[lindex].arr, tree[rindex].arr);
-		}
-		else {
-			tree[v].arr.assign(1, 0);
-			tree[v].arr[0] = arr[l];
-		}
+int query(const vector<Node>& tree, int node, int i, int j, int k) {
+	int m = (tree[node].start + tree[node].end) / 2;
+	if (i == tree[node].start && j == tree[node].end) {
+		return (tree[node].arr.end() - upper_bound(tree[node].arr.begin(), tree[node].arr.end(), k));
 	}
-
-	void initSegTree(const vi& arr) {
-		int logSize = (int)log2(arr.size()) + 1;
-		size = 2 * (int)pow(2, logSize) + 1;
-		tree = new Node[size];
-		makeSegTree(arr, 1, 0, arr.size() - 1);
+	else if (j <= m) {
+		return query(tree, node * 2, i, j, k);
 	}
-
-	int query(int v, int l, int r, const int& k) {
-		int lindex = v * 2;
-		int rindex = lindex + 1;
-		int m = tree[v].l + tree[v].r;
-		m /= 2;
-
-		if (l == tree[v].l && r == tree[v].r) {
-			return tree[v].arr.size() -
-				(upper_bound(tree[v].arr.begin(), tree[v].arr.end(), k) - tree[v].arr.begin());
-		}
-		else if (m >= r) {
-			return query(lindex, l, r, k);
-		}
-		else if (m < l) {
-			return query(rindex, l, r, k);
-		}
-		else {
-			return query(lindex, l, m, k) + query(rindex, m + 1, r, k);
-		}
+	else if (m < i) {
+		return query(tree, node * 2 + 1, i, j, k);
 	}
-} St;
+	else {
+		return query(tree, node * 2, i, m, k) + query(tree, node * 2 + 1, m + 1, j, k);
+	}
+}
 
-int main() {
-	int N, M;
-	vi arr;
+void solve(int N, int M, vector<int>& A) {
 	int i, j, k;
-	St segtree;
+	vector<Node> tree;
+	tree.assign(2 * (int)pow(2, log2(N) + 1) + 1, Node());
+	init(tree, A, 1, 0, N - 1);
 
-	scanf("%d", &N);
-	arr.assign(N, 0);
-	for (int n = 0; n < N; n++) {
-		scanf("%d", &arr[n]);
-	}
-
-	segtree.initSegTree(arr);
-	scanf("%d", &M);
 	for (int m = 0; m < M; m++) {
 		scanf("%d %d %d", &i, &j, &k);
 		i--; j--;
-		printf("%d\n", segtree.query(1, i, j, k));
+		printf("%d\n", query(tree, 1, i, j, k));
 	}
+}
 
+int main() {
+	int N, M;
+	vector<int> A;
+	scanf("%d", &N);
+	A.assign(N, 0);
+	for (int i = 0; i < N; i++) {
+		scanf("%d", &A[i]);
+	}
+	scanf("%d", &M);
+	solve(N, M, A);
 	return 0;
 }

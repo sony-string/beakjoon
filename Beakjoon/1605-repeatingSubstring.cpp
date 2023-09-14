@@ -1,10 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef vector<int> vi;
-typedef pair<int, int> ii;
-
-vi d;
 
 struct SuffixArray {
 	int len;

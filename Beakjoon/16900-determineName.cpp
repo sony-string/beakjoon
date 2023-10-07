@@ -1,25 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-vector<int> fail;
-char* str;
-int K;
-
-void prekmp() {
-	int j = -1;
-	fail.push_back(-1);
-	for (int i = 0; str[i]; i++) {
-		while (j != -1 && str[j] != str[i]) j = fail[j];
-		j++;
-		fail.push_back(j);
-	}
-}
-
+int fail[500'001];
+char str[500'001];
 int main() {
-	str = new char[500'001];
+	int K, len = 0, j = -1;
 	scanf("%s %d", str, &K);
-	prekmp();
-	int len = fail.size() - 1;
-	printf("%lld", (long long)(len - fail.back()) * (K - 1) + len);
+	fail[0] = -1;
+	for (len = 0; str[len]; len++) {
+		while (j != -1 && str[j] != str[len]) j = fail[j];
+		fail[len + 1] = ++j;
+	}
+	printf("%lld", (long long)(len - fail[len]) * (K - 1) + len);
 	return 0;
 }

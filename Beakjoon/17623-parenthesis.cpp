@@ -8,7 +8,6 @@ char newstr[2001];
 const int mul[3] = { 2, 3, 5 };
 char* solve(int n) {
 	if (n < 7) return dp[n];
-	char* str = new char[n * 2 + 10];
 	int mlen = 2000;
 	for (int i = 0; i < 3; i++) {
 		if (n % mul[i] != 0) continue;
@@ -17,6 +16,7 @@ char* solve(int n) {
 	for (int i = 1; i <= n / 2; i++) {
 		mlen = min(mlen, lendp[n - i] + lendp[i]);
 	}
+	char* str = new char[mlen + 1];
 	str[0] = 127;
 	str[1] = 0;
 
